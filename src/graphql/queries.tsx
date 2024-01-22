@@ -10,11 +10,10 @@ export const GET_CONTACT_INFO = gql`
   }
 `;
 
-export const GET_PERSONAL_INFO = gql`
+export const GET_PERSONAL_INFO_BASIC = gql`
   query GetPersonalInfo {
     personalInfo @rest(type: "PersonalInfo", path: "/personalInfo/Ruben") {
       name
-      age
       dateOfBirth
       nationality
       description
@@ -23,14 +22,12 @@ export const GET_PERSONAL_INFO = gql`
   }
 `;
 
-export const GET_PROJECTS = gql`
+export const GET_PROJECTS_BASIC = gql`
   query GetProjects {
-    projects @rest(type: "Project", path: "/projects") {
+    projects @rest(type: "Project", path: "/projects/all/Ruben") {
       id
       title
       description
-      skills
-      ageWhenDone
       image
     }
   }

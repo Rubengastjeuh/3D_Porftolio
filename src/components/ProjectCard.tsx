@@ -20,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
     if (!project.title) {
         return <p></p>;
     }
-    const { title, description, skills, ageWhenDone, image } = project;
+    const { title, description, image } = project;
 
     return (
 

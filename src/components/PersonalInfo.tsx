@@ -15,7 +15,7 @@ interface PersonalInfoProps {
 }
 
 const PersonalInfo: React.FC<PersonalInfoProps> = ({personalInfo}) => {
-    const {name, age, dateOfBirth, nationality, description, languages} = personalInfo;
+    const {name, dateOfBirth, nationality, description, languages} = personalInfo;
 
     return (
         <div className={"center "}>
