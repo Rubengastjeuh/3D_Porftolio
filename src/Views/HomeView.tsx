@@ -67,7 +67,7 @@ const HomeView = () => {
                     <div>
                         <div className={"center"}>
                             {personalInfoData && <PersonalInfo personalInfo={personalInfoData.personalInfo}/>}
-                            <Button variant="contained" style={{backgroundColor: "#006032"}} disableElevation
+                            <Button variant="contained" style={{backgroundColor: "#006032", marginBottom: 30}} disableElevation
                                     onClick={() => setRoomOpen(!roomOpen)}>
                                 {roomOpen ? "Close 3D Room" : "Open 3D Room"}
                             </Button>
