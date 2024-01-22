@@ -9,9 +9,9 @@ interface SkillInfoProps {
 
 const SkillInfo: React.FC<SkillInfoProps> = ({ skills }) => {
     return (
-        <div>
+        <div className={"center"}>
             <h2>Skills</h2>
-            <ul>
+            <ul className={"skillsList"}>
                 {skills.map((skill, index) => (
                     <li key={index}>{skill.name}</li>
                 ))}

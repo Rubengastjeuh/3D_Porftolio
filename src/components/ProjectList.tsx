@@ -15,13 +15,17 @@ interface ProjectListProps {
 
 const ProjectList: React.FC<ProjectListProps> = ({ projects }) => {
     return (
-        <div>
+        <div className={"center"}>
             <h2>Projects</h2>
-            {projects.map((project) => (
-                <ProjectCard key={project.id} project={project} />
-            ))}
+            <div className={"projects"}>
+                {projects.map((project, index) => (
+                    <ProjectCard key={index} project={project} />
+                ))}
+            </div>
+
         </div>
     );
 };
+
 
 export default ProjectList;
