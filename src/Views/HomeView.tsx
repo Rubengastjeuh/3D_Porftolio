@@ -73,7 +73,7 @@ const HomeView = () => {
                             </Button>
                         </div>
 
-                        {roomOpen && <Room></Room>}
+                        {roomOpen && <Room projects={projectsData.projects}></Room>}
                         <hr/>
                         {projectsData && <ProjectList projects={projectsData.projects}/>}
                         <hr/>
