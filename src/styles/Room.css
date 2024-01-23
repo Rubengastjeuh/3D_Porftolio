@@ -13,8 +13,71 @@
     object-fit: cover;
 }
 .card:hover{
-    background-color :rgba(0,96,50,0.8);;
-
+    background-color :rgba(0,96,50,0.8);
     width : 450px;
     height : 700px;
+}
+.studyContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.skillContainer{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.title{
+    font-size: 5rem;
+}
+.projectTitle{
+    font-size: 2rem;
+}
+.skillFloor{
+    width: 1000px;
+    height: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.skillCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 300px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    background-color :rgba(0,96,50,0.8);
+    border-radius: 0.5rem;
+    color: white;
+}
+.skillCard:hover{
+    background-color : rgba(255, 255, 255, 1);
+    color: black;
+}
+
+.studyCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 800px;
+    height: 100px;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0.5rem;
+    padding: 4rem;
+    background-color :rgba(0,96,50,0.8);
+    border-radius: 2rem;
+    color: white;
+    gap: 20px;
+}
+
+.studyCard:hover{
+    background-color : rgba(0, 0, 0, 0.8);
+    width: 800px;
+    height: 200px;
+    font-size: 3rem;
 }

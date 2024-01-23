@@ -72,10 +72,9 @@ const HomeView = () => {
                                 {roomOpen ? "Close 3D Room" : "Open 3D Room"}
                             </Button>
                         </div>
-
-                        {roomOpen && <Room projects={projectsData.projects}></Room>}
+                        {roomOpen && projectsData && skillsData && studyData && <Room projects={projectsData.projects} skills={skillsData.skills} study={studyData.studyInfo}/>}
                         <hr/>
-                        {projectsData && <ProjectList projects={projectsData.projects}/>}
+                        {projectsData && <ProjectList projects={projectsData.projects} />}
                         <hr/>
                         {skillsData && <SkillInfo skills={skillsData.skills}/>}
                         <hr/>
