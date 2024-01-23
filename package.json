@@ -1,7 +1,6 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://rubengastjeuh.github.io/3D_Portfolio",
   "private": true,
   "dependencies": {
     "@apollo/client": "^3.8.10",
