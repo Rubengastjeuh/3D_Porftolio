@@ -1,46 +1,44 @@
-# Getting Started with Create React App
+# 3D Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the 3D Portfolio project! This project combines a React front-end created with Deno, Hono, React, TypeScript, and Three.js, along with a corresponding backend. Below are the instructions for setting up and running both the front-end and the backend locally.
 
-## Available Scripts
+## Front-end Setup
 
-In the project directory, you can run:
+Make sure you have the backend running from [3D_Portfolio_Backend](https://github.com/Rubengastjeuh/3D_Portfolio_Backend) to test locally.
 
-### `npm start`
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/Rubengastjeuh/3D_Portfolio_Frontend.git
+   ```
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+2. Navigate to the project directory:
+   ```bash
+   cd 3D_Portfolio_Frontend
+   ```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+3. Install dependencies:
+   ```bash
+   npm install
+   ```
 
-### `npm test`
+4. Start the development server:
+   ```bash
+   npm start
+   ```
+   Open [http://localhost:3000](http://localhost:3000) in your browser to view the app.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   The page will reload if you make edits, and you will see any lint errors in the console.
 
-### `npm run build`
+5. Build the app for production:
+   ```bash
+   npm run build
+   ```
+   This command creates a production-ready build in the `build` folder. Your app is now ready for deployment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Backend Setup
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Make sure to follow the instructions in the [3D_Portfolio_Backend](https://github.com/Rubengastjeuh/3D_Portfolio_Backend) repository to set up and deploy the backend.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+For online purposes, feel free to customize the backend, and templates for POST, UPDATE, and DELETE operations are provided.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+Enjoy exploring and showcasing your 3D Portfolio! If you encounter any issues or have questions, refer to the respective README files for each part of the project.
