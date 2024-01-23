@@ -83,8 +83,8 @@ const Room3D: React.FC<Room3DProps> = ({ projects, skills, study }) => {
           <p class="title">Skills</p>
           </div>`;
             const css3DObject = createCSS3DObject(cardContent);
-
-            css3DObject.position.set(0, -400, 0);
+        const z = ((cardWidth+150)) * (projects.length/2 -1)-400
+            css3DObject.position.set(0, -400, z);
             const angleInRadians = THREE.MathUtils.degToRad(270);
             css3DObject.rotateX(angleInRadians);
             scene.add(css3DObject);
@@ -102,7 +102,7 @@ const Room3D: React.FC<Room3DProps> = ({ projects, skills, study }) => {
               </div>
           </div>`;
         const css3DObject = createCSS3DObject(cardContent);
-        const z = (cardWidth) * projects.length/2
+        const z = (cardWidth) +200
         css3DObject.position.set(0, 0, -z);
         scene.add(css3DObject);
     };
@@ -141,7 +141,7 @@ const Room3D: React.FC<Room3DProps> = ({ projects, skills, study }) => {
         addProjects(scene);
         addSkills(scene);
         addStudy(scene);
-        camera.position.set(-12.74, 92, 1331.45);
+        camera.position.set(-12, 10, (projects.length/2 * cardWidth)+ 2 *cardWidth);
         camera.lookAt(scene.position);
 
         const animate = () => {
