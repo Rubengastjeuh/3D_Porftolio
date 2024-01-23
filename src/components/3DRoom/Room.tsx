@@ -36,6 +36,7 @@ const Room3D: React.FC<Room3DProps> = ({ projects, skills, study }) => {
     const clock = new THREE.Clock();
     let controls: any;
     const cardWidth = 400;
+    projects = projects.concat(projects)
     const createCSS3DObject = (content: string) => {
         const wrapper = document.createElement('div');
         wrapper.innerHTML = content;
